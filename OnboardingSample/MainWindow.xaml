@@ -32,6 +32,11 @@
                     </ComboBox>
                 </controls:SettingsCard>
 
+                <controls:SettingsCard Description="SettingsCard within an Expander can be made clickable too!"
+                                               Header="This item can be clicked"
+                                               HeaderIcon="{ui:FontIcon Glyph=&#xE716;}"
+                                               IsClickEnabled="True" />
+                
             </controls:SettingsExpander.Items>
             
         </controls:SettingsExpander>
