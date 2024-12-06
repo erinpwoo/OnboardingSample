@@ -11,9 +11,13 @@
     xmlns:ui="using:CommunityToolkit.WinUI"
     Title="OnboardingSample">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="50" >
+    <StackPanel Orientation="Vertical" VerticalAlignment="Top" Padding="50" HorizontalAlignment="Stretch">
 
         <TextBlock Text="Settings" Style="{StaticResource HeaderTextBlockStyle}"/>
-        
+
+        <controls:SettingsCard Header="First setting" Description="We're going to add a button here">
+            <Button Content="Click me!"/>
+        </controls:SettingsCard>
+          
     </StackPanel>
 </Window>
