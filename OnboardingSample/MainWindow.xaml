@@ -18,8 +18,8 @@
         <controls:SettingsExpander Header="Settings Expander" Description="Click to expand and view more settings">
 
             <controls:SettingsExpander.Items>
-                <controls:SettingsCard Header="First setting" Description="We're going to add a button here" HeaderIcon="{ui:FontIcon Glyph=&#xE768;}">
-                    <Button Content="Click me!"/>
+                <controls:SettingsCard Header="First setting" Description="We're going to add a calendar here" HeaderIcon="{ui:FontIcon Glyph=&#xE768;}">
+                    <CalendarDatePicker PlaceholderText="Pick a date" FontSize="16"/>
                  </controls:SettingsCard>
 
                 <controls:SettingsCard Description="Another card to show grouping of cards"
