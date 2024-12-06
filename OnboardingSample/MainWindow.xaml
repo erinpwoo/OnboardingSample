@@ -18,10 +18,20 @@
         <controls:SettingsExpander Header="Settings Expander" Description="Click to expand and view more settings">
 
             <controls:SettingsExpander.Items>
-                <controls:SettingsCard Header="First setting" Description="We're going to add a button here">
+                <controls:SettingsCard Header="First setting" Description="We're going to add a button here" HeaderIcon="{ui:FontIcon Glyph=&#xE768;}">
                     <Button Content="Click me!"/>
                  </controls:SettingsCard>
-                
+
+                <controls:SettingsCard Description="Another card to show grouping of cards"
+                                       Header="Another SettingsCard"
+                                       HeaderIcon="{ui:FontIcon Glyph=&#xE799;}">
+                    <ComboBox SelectedIndex="0" >
+                        <ComboBoxItem>Option 1</ComboBoxItem>
+                        <ComboBoxItem>Option 2</ComboBoxItem>
+                        <ComboBoxItem>Option 3</ComboBoxItem>
+                    </ComboBox>
+                </controls:SettingsCard>
+
             </controls:SettingsExpander.Items>
             
         </controls:SettingsExpander>
