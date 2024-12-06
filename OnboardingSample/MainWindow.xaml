@@ -1,77 +1,17 @@
-<Window x:Class="OnboardingSample.MainWindow"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:controls="using:CommunityToolkit.WinUI.Controls"
-      xmlns:ui="using:CommunityToolkit.WinUI"
-      xmlns:win="http://schemas.microsoft.com/winfx/2006/xaml/presentation" >   
-    <Page>
-        <!--  These styles can be referenced to create a consistent SettingsPage layout  -->
-        <Page.Resources>
-            <!--  Spacing between cards  -->
-            <x:Double x:Key="SettingsCardSpacing">4</x:Double>
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="OnboardingSample.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OnboardingSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="OnboardingSample">
 
-            <!--  Style (inc. the correct spacing) of a section header that can be applied to TextBox components  -->
-            <Style x:Key="SettingsSectionHeaderTextBlockStyle"
-               BasedOn="{StaticResource BodyStrongTextBlockStyle}"
-               TargetType="TextBlock">
-                <Style.Setters>
-                    <Setter Property="Margin" Value="1,30,0,6" />
-                </Style.Setters>
-            </Style>
-        </Page.Resources>
-        <ScrollViewer>
-            <Grid>
-                <StackPanel MaxWidth="1000"
-                        HorizontalAlignment="Stretch"
-                        Spacing="{StaticResource SettingsCardSpacing}">
-                    
-                    <!-- Section 1 -->
-                    <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}" Text="Section 1" />
-                    
-                    <!-- First setting card contains a nested toggle switch. Nested items are right-aligned by default  -->
-                    <controls:SettingsCard Description="This is a default card, with the Header, HeaderIcon, Description and Content set"
-                                       Header="This is the Header"
-                                       HeaderIcon="{ui:FontIcon Glyph=&#xE716;}">
-                        <ToggleSwitch IsOn="True" />
-                    </controls:SettingsCard>
-
-                    <!-- SettingsExpander can contain nested setting cards using the SettingsExpander.Items component -->
-                    <controls:SettingsExpander Description="Click to expand and view more settings cards"
-                                           Header="Settings Expander Example"
-                                           HeaderIcon="{ui:FontIcon Glyph=&#xE91B;}">
-                        <controls:SettingsExpander.Items>
-                            <controls:SettingsCard Description="SettingsCard within an Expander can be made clickable too!"
-                                               Header="This item can be clicked"
-                                               IsClickEnabled="True" />
-                            <controls:SettingsCard ContentAlignment="Left">
-                                <CheckBox Content="Here the ContentAlignment is set to Left. This is great for e.g. CheckBoxes or RadioButtons" />
-                            </controls:SettingsCard>
-                            
-                        </controls:SettingsExpander.Items>
-                        
-                    </controls:SettingsExpander>
-
-                    <!-- Section 2 -->
-                    <TextBlock Style="{StaticResource SettingsSectionHeaderTextBlockStyle}"
-                           Text="Section 2" />
-                    <controls:SettingsCard Description="Click the combo box to view and select from dropdown"
-                                       Header="Settings card using a ComboBox component"
-                                       HeaderIcon="{ui:FontIcon Glyph=&#xE799;}">
-                        <ComboBox SelectedIndex="0">
-                            <ComboBoxItem>Option 1</ComboBoxItem>
-                            <ComboBoxItem>Option 2</ComboBoxItem>
-                            <ComboBoxItem>Option 3</ComboBoxItem>
-                        </ComboBox>
-                    </controls:SettingsCard>
-
-                    <controls:SettingsCard Description="Define an event handler in the MainWindow class and reference it in the Button's 'Click' attribute"
-                                       Header="Settings card with a button"
-                                       HeaderIcon="{ui:FontIcon Glyph=&#xE768;}">
-                        <Button Content="Click me!" />
-                    </controls:SettingsCard>
-
-                </StackPanel>
-            </Grid>
-        </ScrollViewer>
-    </Page>
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        
+        <!-- Our code will go here -->
+        
+    </StackPanel>
 </Window>
