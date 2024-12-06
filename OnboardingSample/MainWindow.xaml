@@ -15,9 +15,17 @@
 
         <TextBlock Text="Settings" Style="{StaticResource HeaderTextBlockStyle}"/>
 
-        <controls:SettingsCard Header="First setting" Description="We're going to add a button here">
-            <Button Content="Click me!"/>
-        </controls:SettingsCard>
+        <controls:SettingsExpander Header="Settings Expander" Description="Click to expand and view more settings">
+
+            <controls:SettingsExpander.Items>
+                <controls:SettingsCard Header="First setting" Description="We're going to add a button here">
+                    <Button Content="Click me!"/>
+                 </controls:SettingsCard>
+                
+            </controls:SettingsExpander.Items>
+            
+        </controls:SettingsExpander>
+        
           
     </StackPanel>
 </Window>
