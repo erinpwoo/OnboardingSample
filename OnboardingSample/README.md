@@ -11,7 +11,11 @@ This sample mostly references the last example shown in the SettingsExpander pag
 
 ## Step 3: Update `MainWindow.xaml`
 1. Include Community Toolkit and WinUI libraries.
-2. Update the stack panel alignment.
+2. Update the stack panel alignment and add some padding:
+   - Orientation="Vertical"
+   - VerticalAlignment="Top"
+   - Padding="50"
+   - HorizontalAlignment="Stretch"
 3. Add a title to the page.
 
 ## Step 4: Add basic `SettingsCard`
@@ -19,7 +23,7 @@ This sample mostly references the last example shown in the SettingsExpander pag
    - Reference Fluent icon glyph Unicode values [here](https://learn.microsoft.com/en-us/windows/apps/design/style/segoe-fluent-icons-font#pua-e700-e900).
    - The `SettingsCard` looks like a text box, but you can add input elements inside it like toggles, check boxes, and drop downs.
 3. Add a simple button inside this settings card.
-4. Add a click handler in the `MainWindow` C# file and reference it in the button's `Click` attribute (for now, it won't do anything).
+4. We would eventually want to define a click handler function in the `MainWindow` C# file that will be referenced in the button's `Click` attribute-- for now we will leave it as is.
 
 ## Step 5: Add a `SettingsExpander` and nest the `SettingsCard` inside it
 1. Add a `SettingsExpander.Items` component inside the `SettingsExpander`. This will contain the list of `SettingsCard` elements.
